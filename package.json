@@ -1,0 +1,43 @@
+{
+  "name": "@civ-clone/base-player",
+  "version": "0.1.0",
+  "description": "A player's lifecycle: joining a game, being seated with a start tile and starting units, seeing tiles, and being defeated.",
+  "repository": "git@github.com:civ-clone/base-player.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^14.18.63",
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.1.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@civ-clone/core-city": "^0.1.9",
+    "@civ-clone/core-civilization": "^0.1.0",
+    "@civ-clone/core-client": "^0.1.0",
+    "@civ-clone/core-game": "^0.1.1",
+    "@civ-clone/core-player": "^0.1.0",
+    "@civ-clone/core-player-world": "^0.1.0",
+    "@civ-clone/core-rule": "^0.1.5",
+    "@civ-clone/core-terrain": "^0.1.0",
+    "@civ-clone/core-unit": "^0.1.0",
+    "@civ-clone/core-world": "^0.1.10",
+    "@civ-clone/core-world-generator": "^0.1.0"
+  }
+}
