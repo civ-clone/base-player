@@ -190,6 +190,7 @@ describe('processCityYields', (): void => {
         new Other(7),
         new Ore(4),
         new Grain(-1),
+        new Coin(5),
       ],
       { city } = standInCity(yields),
       processed: [string, number, string[], unknown, unknown][] = [];
@@ -218,7 +219,7 @@ describe('processCityYields', (): void => {
     expect(processed).to.eql([
       ['Grain', 2, ['Consolidated'], city, yields],
       ['Ore', 6, ['Consolidated'], city, yields],
-      ['Coin', 0, ['Consolidated'], city, yields],
+      ['Coin', 5, ['Consolidated'], city, yields],
     ]);
   });
 
