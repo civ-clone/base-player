@@ -1,6 +1,6 @@
 {
   "name": "@civ-clone/base-player",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A player's lifecycle: joining a game, being seated with a start tile and starting units, taking turns, seeing tiles, and being defeated.",
   "repository": "git@github.com:civ-clone/base-player.git",
   "keywords": [
