@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@civ-clone/base-civilization-barbarian": "^0.1.1",
-    "@civ-clone/base-difficulty": "github:civ-clone/base-difficulty#feat/human-and-level",
+    "@civ-clone/base-difficulty": "^0.1.0",
     "@civ-clone/base-player-action-end-turn": "^0.1.0",
     "@civ-clone/base-unit-trait-founds-cities": "^0.1.0",
     "@civ-clone/core-ai-client": "^0.1.3",
